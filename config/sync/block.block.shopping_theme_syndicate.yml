@@ -1,0 +1,23 @@
+uuid: 9a5649ec-6da1-45cc-814f-b08a956f6a9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - shopping_theme
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: shopping_theme_syndicate
+theme: shopping_theme
+region: social
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

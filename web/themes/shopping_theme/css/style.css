@@ -1,0 +1,22 @@
+.secondary-nav {
+  width: 100%;
+}
+#cart-icon {
+  font-size: 40px;
+  padding: 10px 20px 10px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+}
+
+#message {
+  font-size: 14px;
+  position: absolute;
+  top: 70%;
+  padding: 10px;
+  border: 2px lightblue solid;
+  border-radius: 20px;
+  width: 250px;
+  display: none;
+}

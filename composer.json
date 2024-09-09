@@ -27,6 +27,7 @@
         "drupal/devel": "^5.3",
         "drupal/expand_collapse_formatter": "^2.0",
         "drupal/field_permissions": "^1.4",
+        "drupal/fontawesome": "^2.26",
         "drupal/paragraphs": "^1.18",
         "drupal/pathauto": "^1.13",
         "drupal/read_more_field": "^1.2",

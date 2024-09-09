@@ -1,0 +1,5 @@
+name: 'Cart'
+type: module
+description: 'Provides an add to cart button.'
+core_version_requirement: ^10
+package: DP Modules

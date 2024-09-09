@@ -1,0 +1,36 @@
+uuid: 26f55809-1d10-4d48-b7b2-a7925e3c0807
+langcode: en
+status: true
+dependencies:
+  module:
+    - cart
+    - node
+    - user
+  theme:
+    - shopping_theme
+id: shopping_theme_cartandbuy
+theme: shopping_theme
+region: sidebar
+weight: 0
+provider: null
+plugin: cart_and_buy
+settings:
+  id: cart_and_buy
+  label: 'Cart and Buy'
+  label_display: '0'
+  provider: cart
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      product: product
