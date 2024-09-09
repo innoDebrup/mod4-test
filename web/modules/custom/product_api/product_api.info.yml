@@ -1,0 +1,5 @@
+name: 'Product API'
+type: module
+description: 'Provides an public API endpoint to display JSON information for Product nodes.'
+core_version_requirement: ^10
+package: DP Modules

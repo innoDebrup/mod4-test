@@ -1,0 +1,49 @@
+uuid: 59ed08cb-a20b-44d7-9e55-171cca3195b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_address
+  module:
+    - address
+    - user
+id: user.user.field_address
+field_name: field_address
+entity_type: user
+bundle: user
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: required
+    additionalName:
+      override: optional
+    familyName:
+      override: required
+    organization:
+      override: hidden
+    addressLine1:
+      override: required
+    addressLine2:
+      override: optional
+    addressLine3:
+      override: optional
+    postalCode:
+      override: required
+    sortingCode:
+      override: hidden
+    dependentLocality:
+      override: optional
+    locality:
+      override: required
+    administrativeArea:
+      override: required
+  fields: {  }
+field_type: address
