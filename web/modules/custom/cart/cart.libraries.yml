@@ -1,0 +1,11 @@
+cart-scripts:
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
+cart-css:
+  css:
+    theme:
+      css/style.css: {}

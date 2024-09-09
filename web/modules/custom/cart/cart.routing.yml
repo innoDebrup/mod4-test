@@ -1,0 +1,15 @@
+cart.buy_now:
+  path: '/buy-now/{product}'
+  defaults:
+    _controller: '\Drupal\cart\Controller\BuyNowController::buyNow'
+    _title: 'Buy Now'
+  requirements:
+    _permission: 'access content'
+
+cart.thank_you:
+  path: '/thank-you'
+  defaults:
+    _controller: '\Drupal\cart\Controller\ThankYouController::thankYou'
+    _title: 'Thank You'
+  requirements:
+    _permission: 'access content'

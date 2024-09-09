@@ -1,0 +1,12 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function cart_theme() {
+  return [
+    'thank_you_page' => [
+      'variables' => ['product' => NULL],
+      'template' => 'thank-you-page',
+    ],
+  ];
+}

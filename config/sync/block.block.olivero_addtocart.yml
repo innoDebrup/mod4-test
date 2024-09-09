@@ -1,0 +1,36 @@
+uuid: 437354dd-38be-4306-9d56-67a318a1a146
+langcode: en
+status: true
+dependencies:
+  module:
+    - cart
+    - node
+    - user
+  theme:
+    - olivero
+id: olivero_addtocart
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: add_to_cart
+settings:
+  id: add_to_cart
+  label: 'Add to Cart'
+  label_display: '0'
+  provider: cart
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      product: product

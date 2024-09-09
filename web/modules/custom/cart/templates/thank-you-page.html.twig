@@ -1,0 +1,21 @@
+<div class="thank-you-message">
+  <h4>Thank you for your purchase, {{ product.user }}!</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Image</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ product.name }}</td>
+        <td><img src="{{ product.image }}" alt="{{ product.name }}"></td>
+        <td>{{ product.quantity }}</td>
+        <td>{{product.price}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

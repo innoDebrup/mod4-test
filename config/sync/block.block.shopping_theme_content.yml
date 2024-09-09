@@ -1,0 +1,22 @@
+uuid: f2c88259-b4fc-498b-bed1-e2eebf4c1b9a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - shopping_theme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: shopping_theme_content
+theme: shopping_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
